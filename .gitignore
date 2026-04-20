@@ -1,0 +1,28 @@
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+.DS_Store
+
+# Backend (Python)
+backend/__pycache__/
+backend/*.py[cod]
+backend/*$py.class
+backend/.pytest_cache/
+backend/alembic/versions/*
+
+# Frontend (Node/Next.js)
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.pnp.*
+frontend/.yarn/cache
