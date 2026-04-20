@@ -10,6 +10,12 @@
 
 <br />
 
+<div align="center">
+  <img src="docs/dashboard.png" alt="Blostem Pulse Dashboard" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+</div>
+
+<br />
+
 Blostem Pulse is a cutting-edge, high-availability orchestration engine that monitors B2B market intent signals and dynamically executes **RBI-compliant** marketing pipelines. 
 
 Built for extreme resilience, the platform leverages state-of-the-art **Neuro-Pacing API routing**, **Asynchronous Celery Workers**, and **Just-In-Time (JIT) RAG embeddings** to securely synthesize complex financial localization regulations without violating aggressive rate limits or exposing PII.
