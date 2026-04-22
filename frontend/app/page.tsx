@@ -16,7 +16,7 @@ export default function Dashboard() {
     formData.append("username", "sales_manager");
     formData.append("password", "password123");
 
-    fetch("http://localhost:8000/api/auth/login", {
+    fetch("/api/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: formData
@@ -26,7 +26,7 @@ export default function Dashboard() {
       if(data.access_token) {
           setToken(data.access_token);
           // 2. Fetch prioritized leads via secure JWT
-          fetch("http://localhost:8000/api/leads", {
+          fetch("/api/leads", {
             headers: { "Authorization": `Bearer ${data.access_token}` }
           })
           .then(r => r.json())
@@ -45,7 +45,7 @@ export default function Dashboard() {
     setSequence("Synchronizing vector constraints... decrypting sequence...");
     
     // Attempt to grab sequence
-    fetch(`http://localhost:8000/api/leads/${lead.id}/sequences`, {
+    fetch(`/api/leads/${lead.id}/sequences`, {
         headers: { "Authorization": `Bearer ${token}` }
     })
     .then(res => res.json())
